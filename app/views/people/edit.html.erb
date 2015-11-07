@@ -1,0 +1,10 @@
+<h1>Editing Person</h1>
+
+<%= semantic_form_for @person do |f| %>
+    <%= f.input :name %>
+    <%= f.input :dateofbirth%>
+    <%= f.actions :submit, :cancel %>
+  <% end %>
+
+<%= link_to 'Show', @person %> |
+<%= link_to 'Back', people_path %>
